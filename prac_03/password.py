@@ -3,8 +3,8 @@ CP1404/CP5632 - Practical - Suggested Solution
 Get a password with minimum length and display asterisks
 """
 
-#Pre Notes:
-#Some Password lines will need to be repeated when working with the lengths.
+# Pre Notes:
+# Some Password lines will need to be repeated when working with the lengths.
 
 
 MINIMUM_LENGTH = 4
@@ -16,6 +16,7 @@ def version_1():
         password = input("Enter password of at least {} characters: ".format(MINIMUM_LENGTH))
 
     print('*' * len(password))
+
 
 def main():
     password = get_password(MINIMUM_LENGTH)

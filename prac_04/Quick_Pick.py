@@ -20,7 +20,7 @@ def main():
 
     for i in range(number_of_quick_picks):
         quick_pick = []
-        for i in range(NUMBERS_PER_LINE):
+        for j in range(NUMBERS_PER_LINE):
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
