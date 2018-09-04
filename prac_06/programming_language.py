@@ -2,14 +2,12 @@
 CP1404/CP5632 Practical - Suggested Solution
 Programming Language class with tests.
 """
-
-
 # Return the self values
 
 class ProgrammingLanguage:
     # Defining init
-    def __init__(self, language, typing, boolean, year):
-        self.name = language
+    def __init__(self, name, typing, boolean, year):
+        self.name = name
         self.typing = typing
         self.boolean = boolean
         self.year = year
@@ -19,7 +17,7 @@ class ProgrammingLanguage:
             self.name, self.typing, self.boolean, self.year)
 
     def is_dynamic(self):
-        # True or False
+        # True or False NOTE: WONT TAKE ANY OTHER PARAMETER BUT >>>(SELF)<<<
         return self.typing == "Dynamic"
 
 def start_testing():
@@ -28,8 +26,10 @@ def start_testing():
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
     languages = [ruby, python, visual_basic]
     print(python)
+    #For Loop, Referred to assessment piece.
     print("The dynamically typed languages are:")
     for language in languages:
+        #Checks through my is_dynamic program to ensure that it only prints dynamics.
         if language.is_dynamic():
             print(language.name)
 start_testing()
